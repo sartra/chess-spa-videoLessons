@@ -9,6 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
     <title>Chess NYC Videos</title>
 
     <!-- Bootstrap Core CSS -->
@@ -42,7 +45,6 @@
                 color:white;
                 font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
                 position: absolute;
-                background: rgba(250,131,16,0.3);
                 background: rgba(0,0,0,0.4);
                 top: 0;
                 bottom: 0;
@@ -71,7 +73,6 @@
             video {
                 position: absolute;
                 z-index: -1;
-                /*opacity: 0.9;*/
                 top: 50%;
                 left: 50%; 
                 transform: translate(-50%, -50%);
@@ -80,6 +81,7 @@
                 width: auto;
                 height: auto;
             }
+
 
             h3 {
                 color: #3cbc8d;
@@ -102,7 +104,7 @@
            #grey{
               position: fixed;
               width: 100%;
-              height: 900px; /*same height as jumbotron */    
+              height: 900px; 
               left:0;
               z-index: 1;
               background-color: #333333;
@@ -111,8 +113,6 @@
               -o-background-size: cover;
               background-size: cover;
               margin-bottom: 0px;
-              /*background-blend-mode: soft-light;*/
-
           }
 
           .logo-main {
@@ -120,16 +120,6 @@
             vertical-align: middle;
             margin:0;
             padding:0;
-        }
-
-
-        .logo-top {
-            width: 100%;
-            vertical-align: middle;
-            margin:0;
-            margin-top: 40%;
-            padding:50;
-            /*opacity: .6;*/
         }
 
 
@@ -157,22 +147,36 @@
 
 
 
-       /* @media (max-width: 800px) {
+        /*@media (max-width: 800px) {
             .video-container{
                 display:none;
             }
+            video {
+                display:none;
+            }
+            }
+
 
             #lessons{
-                position: absolute;
                 top:50px;
-            }
-        }*/
+            }*/
+        }
 
        /* section{
             display:block;
             clear:both;
         }*/
 
+
+
+       /* @media all and (max-width: 700px)
+            {
+                .jumbotron-page
+                {
+                    height: 100px;
+                }
+            }
+*/
 
 
         .btn {
@@ -208,29 +212,39 @@
 
 
 
-ul .list-inline  li a { {
-       color:#5407b9 !important; 
-    }
-    
-ul .purpleLinks{
-  color: #5407b9 !important:;
-}
-a:hover,
-a:focus,
-a:active,
-a.active {
-  color: #5407b9 !important;
-}
+        ul .list-inline  li a { {
+               color:#5407b9 !important; 
+            }
+            
+        ul .purpleLinks{
+          color: #5407b9 !important:;
+        }
+        a:hover,
+        a:focus,
+        a:active,
+        a.active {
+          color: #5407b9 !important;
+        }
 
-a {
-  color: #369ffe;
-}
-a:hover,
-a:focus,
-a:active,
-a.active {
-  color: #FE9636;
-}
+        a {
+          color: #369ffe;
+        }
+        a:hover,
+        a:focus,
+        a:active,
+        a.active {
+          color: #FE9636;
+        }
+
+        .portfolio-modal .modal-content {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        /*iframe {
+            width: 100%;
+            height: auto;
+        }*/
 
     </style>
 
@@ -274,16 +288,7 @@ a.active {
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-<!--     <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header> -->
+   
 
 
     <div class="header-container">
@@ -305,9 +310,9 @@ a.active {
  </div> -->
 
 </div> <!-- end of video overlay -->
-</div> <!-- end of header-container -->
+</div> <!-- end of video container -->
 
-</div>
+</div><!-- end of header-container -->
 
 <!--  <div class="col-md-6 col-md-offset-3 text-center">
      <img src="img/logos/chessnyc.svg" class="logo-main">
@@ -500,7 +505,7 @@ a.active {
                             <div class="team-member">
                                 <img src="img/team/marcp.jpg" class="img-responsive img-circle" alt="">
                                 <h4>Marc Paragua</h4>
-                                <p class="text-muted">Lead Designer</p>
+                                <p class="text-muted">GM Instructor</p>
                                 <ul class="list-inline social-buttons">
                                     <li><a href="#"><i class="fa fa-twitter"></i></a>
                                     </li>
@@ -515,7 +520,7 @@ a.active {
                             <div class="team-member">
                                 <img src="img/team/rebecca.jpg" class="img-responsive img-circle" alt="">
                                 <h4>Rebecca Taxman</h4>
-                                <p class="text-muted">Lead Marketer</p>
+                                <p class="text-muted">Team Leader</p>
                                 <ul class="list-inline social-buttons">
                                     <li><a href="#"><i class="fa fa-twitter"></i></a>
                                     </li>
@@ -530,7 +535,7 @@ a.active {
                             <div class="team-member">
                                 <img src="img/team/majur.jpg" class="img-responsive img-circle" alt="">
                                 <h4>Majur Juac</h4>
-                                <p class="text-muted">Lead Developer</p>
+                                <p class="text-muted">National Master</p>
                                 <ul class="list-inline social-buttons">
                                     <li><a href="#"><i class="fa fa-twitter"></i></a>
                                     </li>
